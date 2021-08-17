@@ -1,11 +1,19 @@
+/**
+ * @module       page
+ * @file         Registration.jsx
+ * @description  registration page
+ * @author       Ritika <spk2ritika1911@gmail.com>
+ * @since        17/08/2021
+----------------------------------------------------------------------------------------------- */
 import React from 'react'
+import '../css/Registration.css'
 
 const Registration = () =>{
     return(
-        <div>
+        <div className = "box">
             <form action =''>
                 <div>
-                    <h1>Registration form</h1>
+                    <h1>Register</h1>
                 </div>
                 <div>
                 <label htmlFor='firstName'>First Name</label>
