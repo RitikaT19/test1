@@ -1,17 +1,14 @@
+//import './App.css'
+//import Form from '../src/pages/Form'
 import React from 'react'
-import Registration from '../src/pages/Registration'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Form from './pages/Form'
 
-const App = () =>{
+function App(){
   return(
-    <>
-    <BrowserRouter>
-      <Switch>
-        <Route path='/' component={Registration}/>
-      </Switch>
-    </BrowserRouter>
-    </>
+    <div className='App'>
+      <Form/>
+    </div> 
   )
 }
-
 export default App;
+
