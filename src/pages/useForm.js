@@ -1,6 +1,11 @@
-//import { values } from "lodash";
+/**
+ * @module       pages
+ * @file         userForm.js
+ * @description  holds the hooks the form
+ * @author       Ritika <spk2ritika1911@gmail.com>
+ * @since        18/08/2021
+----------------------------------------------------------------------------------------------- */
 import { useState, useEffect } from "react";
-//import validateInfo from "./validateInfo";
 
 const useForm = (callback, validateInfo) => {
     const [values, setValues] = useState({

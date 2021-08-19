@@ -1,3 +1,10 @@
+/**
+ * @module       pages
+ * @file         Form.css
+ * @description  holds the css for the form
+ * @author       Ritika <spk2ritika1911@gmail.com>
+ * @since        19/08/2021
+----------------------------------------------------------------------------------------------- */
 .form-container {
     margin: 100px auto;
     width: 1000px;

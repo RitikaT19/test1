@@ -1,3 +1,10 @@
+/**
+ * @module       pages
+ * @file         Form.js
+ * @description  This page will get rendered on the webpage
+ * @author       Ritika <spk2ritika1911@gmail.com>
+ * @since        18/08/2021
+----------------------------------------------------------------------------------------------- */
 import React, {useState} from 'react'
 import FormSignUp from './FormSignUp'
 import FormSuccess from './FormSuccess'

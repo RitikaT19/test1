@@ -1,3 +1,10 @@
+/**
+ * @module       pages
+ * @file         FormSignUp.js
+ * @description  holds the code for sign up page
+ * @author       Ritika <spk2ritika1911@gmail.com>
+ * @since        18/08/2021
+----------------------------------------------------------------------------------------------- */
 import React from 'react'
 import useForm from './useForm'
 import validateInfo from './validateInfo'

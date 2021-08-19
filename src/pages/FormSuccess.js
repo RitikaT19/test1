@@ -1,3 +1,11 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/**
+ * @module       pages
+ * @file         FormSuccess.js
+ * @description  success page
+ * @author       Ritika <spk2ritika1911@gmail.com>
+ * @since        18/08/2021
+----------------------------------------------------------------------------------------------- */
 import React from 'react'
 
 const FormSuccess = () => {

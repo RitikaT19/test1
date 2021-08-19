@@ -1,3 +1,10 @@
+/**
+ * @module       pages
+ * @file         validationInfo.js
+ * @description  holds the validation for input values for the form
+ * @author       Ritika <spk2ritika1911@gmail.com>
+ * @since        18/08/2021
+----------------------------------------------------------------------------------------------- */
 export default function validateInfo(values){
     let errors = {}
 
