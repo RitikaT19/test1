@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 //import validateInfo from "./validateInfo";
 
-const useForm = (validateInfo) => {
+const useForm = (callback, validateInfo) => {
     const [values, setValues] = useState({
         firstName:'',
         lastName:'',
@@ -24,6 +24,12 @@ const useForm = (validateInfo) => {
         setErrors(validateInfo(values));
         setIsSubmitting(true);
     }
+    useEffect(()=>{
+        if(Object.keys(errors).length === 0 && isSubmitting){
+            callback();
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[errors])
     return { handleChange, values, handleSubmit, errors };
 }
 export default useForm;

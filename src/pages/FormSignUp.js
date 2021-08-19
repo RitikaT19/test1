@@ -21,7 +21,7 @@ const FormSignUp = ({submitForm}) => {
                     type="text" 
                     name="firstName" 
                     className="form-input" 
-                    placeholder = "Enter your firstName"
+                    placeholder = "Enter your first name"
                     value={values.firstName}
                     onChange = {handleChange}/>
                     {errors.firstName && <p>{errors.firstName}</p>}
@@ -37,7 +37,7 @@ const FormSignUp = ({submitForm}) => {
                     type="text" 
                     name="lastName" 
                     className="form-input" 
-                    placeholder = "Enter your lastName" 
+                    placeholder = "Enter your last name" 
                     value={values.lastName}
                     onChange = {handleChange}/>
                     {errors.lastName && <p>{errors.lastName}</p>}
