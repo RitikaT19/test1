@@ -10,7 +10,7 @@ const FormSignUp = ({submitForm}) => {
         <div className = "form-content-right">
             <form className="form" onSubmit={handleSubmit}>
                 <h1>
-                    Get started with us! Please fill this form to register yourself
+                    Get started with us! Please fill this form to register yourself!
                 </h1>
                 <div className = "form-inputs">
                     <label htmlFor="firstName" 
