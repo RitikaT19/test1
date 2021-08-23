@@ -152,4 +152,11 @@
       rgb(39, 143, 255) 0%,
       rgb(12, 99, 250) 100%
     );
+
+  }
+
+  .form-input-login a {
+    text-decoration: none;
+    color: #27cdff;
+    font-weight: 600;
   }

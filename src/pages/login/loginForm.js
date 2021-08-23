@@ -39,6 +39,9 @@ const LoginForm = () => {
                     <button className = "form-input-btn" type="submit">
                         Login
                     </button>
+                <span className = 'form-input-login'>
+                    Don't have an account? Signup <a href='/register'>here</a>
+                </span>
             </form>
             
         </div>
