@@ -34,8 +34,8 @@ const useForm = (callback, validateInfo) => {
     function axiosFunction(userDetails){
         user.registerUser(userDetails)
             .then((res)=>{
+                alert('You are successfully logged in!')
                 console.log(res.data.message)
-                console.log(res.data.data)
                 alert("You are successfully registered!")
             })
             

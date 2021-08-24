@@ -8,22 +8,31 @@
 
 import React from 'react'
 import '../Form.css'
+import validateInfo from '../validateInfo'
+import useLogin from './useLogin'
 
-const LoginForm = () => {
+const LoginForm = ({submitForm}) => {
+    const {handleChange, values, handleSubmit, errors } = useLogin(submitForm, validateInfo)
     return (
         <div className = "form-content-right">
-            <form className = "form">
+            <form className = "form" onSubmit = {handleSubmit}>
                 <h1>
                     Fill you credentials to login!
                 </h1>
                 <div className = "form-inputs">
-                    <label htmlFor="email" className = "form-label">
+                    <label htmlFor="email" 
+                    className ="form-label">
                         Email ID
                     </label>
-                    <input id ="firstName" 
-                    type="text" name="firstName" 
+                    <input id ="email" 
+                    type="email" 
+                    name="email" 
                     className="form-input" 
-                    placeholder = "Enter your email id"/>
+                    placeholder = "Enter your email"
+                    value={values.email}
+                    onChange = {handleChange}/>
+                    {errors.email && <p>{errors.email}</p>}
+                    
                 </div>
 
                 <div className = "form-inputs">
@@ -34,7 +43,10 @@ const LoginForm = () => {
                     type="password" 
                     name="password" 
                     className="form-input" 
-                    placeholder = "Enter your password"/>
+                    placeholder = "Enter your password"
+                    value={values.password}
+                    onChange = {handleChange}/>
+                    {errors.password && <p>{errors.password}</p>}
                 </div>
                     <button className = "form-input-btn" type="submit">
                         Login

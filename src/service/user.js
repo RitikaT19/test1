@@ -13,4 +13,8 @@ export class User{
     registerUser = (userDetails) => {
         return Axios.post(BASE_URL+'/registerUser', userDetails)
     }
+
+    userLogin = (loginDetails) => {
+        return Axios.post(BASE_URL+'/userLogin', loginDetails)
+    }
 }
