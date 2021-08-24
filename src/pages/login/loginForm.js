@@ -15,8 +15,8 @@ const LoginForm = ({submitForm}) => {
     const {handleChange, values, handleSubmit, errors } = useLogin(submitForm, validateInfo)
     return (
         <div className = "form-content-right">
-            <form className = "form" onSubmit = {handleSubmit}>
-                <h1>
+            <form className = "form" onSubmit = {handleSubmit} data-testid = 'form' >
+                <h1 data-testid = 'header'>
                     Fill you credentials to login!
                 </h1>
                 <div className = "form-inputs">
@@ -27,6 +27,7 @@ const LoginForm = ({submitForm}) => {
                     <input id ="email" 
                     type="email" 
                     name="email" 
+                    data-testid = 'email'
                     className="form-input" 
                     placeholder = "Enter your email"
                     value={values.email}
@@ -42,6 +43,7 @@ const LoginForm = ({submitForm}) => {
                     <input id = "password" 
                     type="password" 
                     name="password" 
+                    data-testid = 'password'
                     className="form-input" 
                     placeholder = "Enter your password"
                     value={values.password}
@@ -51,7 +53,7 @@ const LoginForm = ({submitForm}) => {
                     <button className = "form-input-btn" type="submit">
                         Login
                     </button>
-                <span className = 'form-input-login'>
+                <span className = 'form-input-login' data-testid = 'submitButton'>
                     Don't have an account? Signup <a href='/register'>here</a>
                 </span>
             </form>
