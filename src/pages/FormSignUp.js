@@ -14,8 +14,8 @@ const FormSignUp = ({submitForm}) => {
     const {handleChange, values, handleSubmit, errors } = useForm(submitForm, validateInfo);
     return (
         <div className = "form-content-right">
-            <form className="form" onSubmit={handleSubmit}>
-                <h1>
+            <form className="form" onSubmit={handleSubmit} data-testid = 'form'>
+                <h1 data-testid = 'header'>
                     Get started with us! Please fill this form to register yourself!
                 </h1>
                 <div className = "form-inputs">
@@ -26,6 +26,7 @@ const FormSignUp = ({submitForm}) => {
                     <input id ="firstName" 
                     type="text" 
                     name="firstName" 
+                    data-testid = 'firstName'
                     className="form-input" 
                     placeholder = "Enter your first name"
                     value={values.firstName}
@@ -42,6 +43,7 @@ const FormSignUp = ({submitForm}) => {
                     <input id = "lastName" 
                     type="text" 
                     name="lastName" 
+                    data-testid = 'lastName'
                     className="form-input" 
                     placeholder = "Enter your last name" 
                     value={values.lastName}
@@ -58,6 +60,7 @@ const FormSignUp = ({submitForm}) => {
                     <input id ="email" 
                     type="email" 
                     name="email" 
+                    data-testid = 'email'
                     className="form-input" 
                     placeholder = "Enter your email"
                     value={values.email}
@@ -74,13 +77,14 @@ const FormSignUp = ({submitForm}) => {
                     <input id = "password" 
                     type="password" 
                     name="password" 
+                    data-testid = 'password'
                     className="form-input" 
                     placeholder = "Enter your password"
                     value={values.password}
                     onChange = {handleChange}/>
                     {errors.password && <p>{errors.password}</p>}
                 </div>
-                <button className = "form-input-btn" type="submit">
+                <button className = "form-input-btn" type="submit"  data-testid = 'submitButton'>
                     Sign up
                 </button>
                 <span className = 'form-input-login'>
